@@ -1,0 +1,12 @@
+
+body {
+    font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-secondary);
+    background-color:var(--color-primary);
+    margin: 0px;
+  }
+
+header {
+  background-color: var(--color-header);
+  
+}
