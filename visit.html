@@ -8,37 +8,53 @@
     <meta name="keywords" content="science, kids, learning, museum, food, drinks, location, accessibility, admission">
     <title>Vitensentrum | Visit us</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/variables.css">
+    
+    <script src="https://kit.fontawesome.com/c4ddc88aa3.js" crossorigin="anonymous"></script>
+
 
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon32-32.png">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/headerlogo.png" alt="Logo for Vitensentrum"></a>
-        <ul>
-            <li><a href="exibitions.html">Exibitions</li>
-            <li><a href="contribution.html">Get involved</li>
-            <li><a href="visit.html">Visit us</li>
-        </ul>
-        <ul>
-            <li><a href="exibitions/exibition-kids.html">Skeletons</a></li>
-            <li><a href="exibitions/exibition-kids.html">For kids</a></li>
-            <li><a href="exibitions/exibition-kids.html">Pre Historic Era</a></li>
-            <li><a href="exibitions/exibition-kids.html">Biology and Medicine</a></li>
-            <li><a href="exibitions/exibition-kids.html">Ecology</a></li>
-            <li><a href="exibitions/exibition-kids.html">Robotics and AI</a></li>
-            <li><a href="exibitions/exibition-kids.html">Cosmology</a></li>
-            <li><a href="exibitions/exibition-kids.html">Human anatomy</a></li>
-            <li><a href="exibitions/exibition-kids.html">Lifesize models</a></li>
-        </ul>
-        <div>
-            <p><a href="contact.html">Contact us</a></p>
-            <p><a href="#">English</a></p>
+        <div class="headerlogo_large">
+            <a href="index.html"><img src="images/headerlogo.png" alt="Logo for Vitensentrum"></a>
         </div>
-        <form>
-            <input class="searchbar_input" type="search" placeholder="What are you looking for?">
-        </form>
+        <div class="header_large">
+            <a href="exibitions.html" class="header_exibition">Exibitions</a>
+            <a href="contribution.html" class="header_contribution">Get involved</a>
+            <a href="visit.html" class="header_visit">Visit us</a>
+            <a href="contact.html" class="extra_contact">Contact us</a>
+            <a href="#" class="extra_english">English <i class="fa-solid fa-globe large_globe"></i></a> 
+            <form class="search_large">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="searchbar_input" type="search" placeholder="Discover wonders!">
+            </form>
+        </div>
+
+        <a href="index.html" class="headerlogo_mobile"><img src="images/logo-mobile.png" alt="Logo for Vitensentrum" class="headerlogo_mobile_png"></a>
+        <input type="checkbox" id="hamburgermenu">
+            <label for="hamburgermenu" class="hamburgermenu"><i class="fas fa-bars"></i></label>
+        <nav class="menu_mobile">
+            <div>
+                <i class="fa-solid fa-globe globe"></i>
+                <h2>EN</h2>
+            </div>
+            <form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="searchbar" type="search" placeholder="Discover wonders!">
+            </form> 
+            <a href="exibitions/exibition-kids.html">Exibitions</a>
+            <a href="contribution.html">Contribution</a>
+            <a href="policy-terms.html">Policy and terms</a>
+            <a href="visit.html">Visit us</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
     </header>
     <main>
         <img src="#" alt="#">
