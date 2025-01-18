@@ -27,7 +27,7 @@ body {
 
   /*Header*/
 header {
-  
+  z-index: 1000;
   background-color: var(--color-header);
   position: relative;
   font-size: 25px;
@@ -114,6 +114,12 @@ nav,
   margin: 10px 0px;
 }
 
+.menu_mobile a:hover {
+  font-style: italic;
+}
+
+
+
 
 .headerlogo_large, 
 .extra_contact,
@@ -133,7 +139,166 @@ nav,
 }
 
 
+/*Homepage*/
+
+.homepage h3 {
+  background-color: var(--color-secondary);
+  font-size: var(--small);
+  font-weight: 100;
+  color: white;
+  padding: 7px 20px;
+  margin: 5px 0px;
+
+}
+
+.homepage-header {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/spaceship.jpg);
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.homepage-header-text {
+  position: relative;
+  top: 130px;
+  text-align: center;
+}
+
+.homepage-header-text h1 {
+  color: white;
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-weight: 500;
+  font-size: var(--small_medium);
+  margin: auto;
+}
+
+.homepage-header-text h2 {
+  font-weight: 200;
+  font-size: var(--very_small);
+  margin: auto;
+}
+
+.homepage-header-text a {
+  color: white;
+}
+
+/*Interactive element*/
+
+
+.scrollbar {
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+  grid-auto-columns: 45%;
+  overflow-x: auto;
+  margin: 0px 20px;
+  
+}
+
+.scrollbar a:hover {
+    font-style: italic;
+}
+
+.scrollbar-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 2px;
+}
+
+.scrollbar-element img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.scrollbar-element p {
+  font-weight: 100;
+  font-size: var(--very_small);
+}
+
+.scrollbar-element a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+
+.snapscroll {
+  scroll-snap-type: inline mandatory;
+}
+
+.snapscroll > * {
+  scroll-snap-align: start;
+}
+/**/
+
+
+.sections a {
+  text-decoration: none;
+  color: white;
+}
+
+.sections a:hover {
+  font-style: italic;
+}
+
+
+.homepage-sections1 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/math.jpg);
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+}
+
+.homepage-sections2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/vr-painting.jpg);
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  background-position: 80% 20%;
+}
+
+.homepage-sections3 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/heart.jpg);
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+}
+
+.homepage-sections-text {
+  position: relative;
+  text-align: left;
+}
+
+.homepage-sections-text h4 {
+  color: white;
+  font-family: "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-weight: 100;
+  font-size: var(--small_medium);
+  margin: 0px 0px 0px 20px;
+  position: relative;
+  top: 70px;
+  text-transform: uppercase;
+
+}
+
+/*Exibitions page*/
+
+
+
+
 /*Footer*/
+
+footer a:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .footer_shortcuts, 
 .footer_contribution {
   display: none;
@@ -340,7 +505,10 @@ footer {
   .headerlogo_large img {
     height: 60px;
     margin: 5px;
-  
+  }
+
+  .header_large a:hover {
+    font-style: italic;
   }
 
   .header_exibition {
@@ -454,6 +622,60 @@ footer {
     margin: auto 5px;
   
   }
+
+
+
+  /*Homepage*/
+
+  .homepage-header {
+    height: 250px;
+  }
+
+  .homepage-header-text {
+    margin-left: 20px;
+    text-align: left;
+    top: 155px;
+  }
+
+  .homepage-header-text h1 {
+    text-transform: uppercase;
+    font-size: var(--header);
+  }
+
+  .homepage-header-text h1 {
+    font-size: var(--large);
+  }
+
+  .homepage-header-text h2 {
+    font-size: var(--small_medium);
+  }
+
+  .scrollbar {
+    grid-auto-columns: 30%;
+  }
+
+
+  .scrollbar-element img {
+    height: 200px;
+  }
+
+
+  .homepage-sections1 {
+    height: 200px;
+  }
+
+  .homepage-sections2 {
+    height: 200px;
+  }
+
+  .homepage-sections3 {
+    height: 200px;
+  }
+
+  .homepage-sections-text h4 {
+    top: 165px;
+  }
+
 
   /*Footer*/
 
@@ -606,6 +828,35 @@ footer {
   .searchbar_input {
     padding-right: 100px;
   }
+
+
+  /*Homepage*/
+
+  .homepage-header-text {
+    margin-left: 40px;
+  }
+
+  .homepage h3 {
+    padding: 5px 40px;
+    font-size: var(--small_medium);
+    margin: 10px 0px;
+  }
+
+  .scrollbar {
+    margin: 0px 40px;
+  }
+
+  .scrollbar-element p {
+    font-size: var(--small);
+  }
+  .scrollbar-element img {
+    height: 250px;
+  }
+
+  .homepage-sections-text h4 {
+    margin-left: 40px;
+  }
+
 
   /*Footer*/
   
