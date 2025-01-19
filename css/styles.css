@@ -366,7 +366,7 @@ nav,
 }
 
 .grid-element1 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/skeleton-414543_1920.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/skeleton.jpg);
 
 }
 
@@ -382,6 +382,7 @@ nav,
 
 .grid-element4 {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/math.jpg);
+  background-position: left;
 
 }
 
@@ -411,7 +412,115 @@ nav,
 }
 
 
+/*Exibitons specific*/
 
+.forkids-header-text p {
+  display: none;
+}
+
+.forkids-header {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/math.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+}
+
+.forkids-header-text {
+  position: relative;
+  top: 130px;
+  text-align: center;
+}
+
+.forkids-header-text h1 {
+  color: white;
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-weight: 500;
+  font-size: var(--medium);
+  margin: auto;
+  text-transform: uppercase;
+  position: relative;
+  top: -30px;
+}
+
+.for-kids-text {
+  margin: 40px;
+}
+
+.for-kids-text h3 {
+  font-weight: 500;
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-size: var(--small_medium);
+}
+
+.for-kids-text h4 {
+  font-weight: 300;
+  font-size: var(--small);
+  margin: 0px 0px 5px 0px;
+}
+
+.for-kids-text p {
+  margin: 0px;
+  line-height: 1.5;
+  font-size: var(--small);
+  font-weight: 100;
+}
+
+
+
+/*Interactive element*/
+
+.scollbar-background {
+  background-color: var(--color-secondary);
+  padding: 20px 20px 10px 20px;
+  margin-bottom: 20px;
+}
+
+
+.scrollbar-exibitionspecific {
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+  grid-auto-columns: 42%;
+  overflow-x: auto;
+}
+
+.scrollbar-exibitionspecific a:hover {
+    font-style: italic;
+}
+
+.scrollbar-element-exibitionspecific {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 2px;
+}
+
+.scrollbar-element-exibitionspecific img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.scrollbar-element-exibitionspecific p {
+  font-weight: 100;
+  font-size: var(--very_small);
+}
+
+.scrollbar-element-exibitionspecific p {
+  text-decoration: none;
+  color: white;
+}
+
+
+.snapscroll-exibitionspecific {
+  scroll-snap-type: inline mandatory;
+}
+
+.snapscroll-exibitionspecific > * {
+  scroll-snap-align: start;
+}
+/**/
 
 
 /*Footer*/
@@ -868,6 +977,48 @@ footer {
 }
 
 
+/* Exibitions specific page - kids*/
+
+.for-kids-text p {
+  margin: 10px 40px;
+}
+
+
+.for-kids-text h3 {
+  display: none;
+}
+
+.forkids-header {
+  height: 230px;
+  background-position: 45% 55%;
+}
+
+.forkids-header-text {
+  top: 120px;
+}
+
+.forkids-header-text h1 {
+  font-size: var(--large);
+  margin-left: 20px;
+  text-align: left;
+  position: relative;
+  top: -18px;
+}
+
+.forkids-header-text p {
+  display: block;
+  background-color: var(--color-secondary);
+  margin: 0px;
+  padding: 10px 150px 10px 20px;
+  text-align: left;
+  position: relative;
+  top: -13px;
+  color: white;
+  font-weight: 100;
+  line-height: 1.6;
+  font-size: var(--small);
+}
+
 
   /*Footer*/
 
@@ -1070,7 +1221,44 @@ footer {
 
 
 
-  
+/* Exibitions specific page - kids*/
+
+
+.forkids-header-text h1 {
+  margin-left: 40px;
+}
+
+.forkids-header-text p {
+  padding: 10px 150px 10px 40px;
+
+}
+
+.for-kids-text h4 {
+  margin: 10px 60px;
+  font-size: var(--small_medium);
+}
+
+.for-kids-text p {
+  margin: 10px 60px;
+  font-size: var(--small_medium);
+}
+
+.scollbar-background {
+  padding: 20px 60px 10px 60px;
+}
+
+
+.scrollbar-exibitionspecific {
+  grid-auto-columns: 38%;
+}
+
+.scrollbar-element-exibitionspecific img {
+  height: 200px;
+}
+
+.scrollbar-element-exibitionspecific p {
+  font-size: var(--small);
+}
 
 
   /*Footer*/
