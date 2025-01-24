@@ -9,6 +9,7 @@
 }
 
 :root {
+    --tiny: 10px;
     --very_small: 12px;
     --small: 16px;
     --small_medium: 20px;

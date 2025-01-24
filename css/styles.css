@@ -520,7 +520,126 @@ nav,
 .snapscroll-exibitionspecific > * {
   scroll-snap-align: start;
 }
-/**/
+
+
+/*Policy and terms*/
+
+.policy-background {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/oldman.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-attachment: fixed;
+}
+
+.reveal-button-pp {
+  padding: 10px 20px;
+  background-color: var(--color-secondary);
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: var(--small_medium);
+  height: 100%;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+}
+
+.reveal-button-pp:hover {
+  background-color: rgba(19, 19, 19, 1);
+}
+
+.reveal-text-pp {
+  display: none;
+}
+
+
+.privacypolicy {
+  display: none;
+  background-color: var(--color-secondary);
+  color: white;
+  position: relative;
+  font-weight: 100;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.reveal-text-pp:checked + .reveal-button-pp + .privacypolicy {
+  display: block;
+}
+
+
+.reveal-button-tc {
+  padding: 10px 40px 10px 20px;
+  background-color: var(--color-secondary);
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: var(--small_medium);
+  height: 100%;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+
+}
+
+.reveal-button-tc:hover {
+  background-color: rgba(19, 19, 19, 1);
+}
+
+.reveal-text-tc {
+  display: none;
+}
+
+.termsconditions {
+  display: none;
+  background-color: var(--color-secondary);
+  color: white;
+  font-weight: 100;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.reveal-text-tc:checked + .reveal-button-tc + .termsconditions {
+  display: block;
+}
+
+.arrowdown {
+  left: 81%;
+  position: absolute;
+}
+
+.privacypolicy .smalltext {
+  font-size: var(--tiny);
+}
+
+.termsconditions .smalltext {
+  font-size: var(--tiny);
+}
+
+.privacypolicy h2,
+.termsconditions h2 {
+  margin: 10px 0px 0px 0px;
+  font-size: var(--small);
+}
+
+.privacypolicy p, 
+.termsconditions p,
+.privacypolicy li, 
+.termsconditions li {
+  margin: 2px 0px 0px 0px;
+  font-size: var(--very_small);
+}
+
+.privacypolicy ul, 
+.termsconditions ul {
+  margin: 0px;
+}
 
 
 /*Footer*/
@@ -1019,6 +1138,57 @@ footer {
   font-size: var(--small);
 }
 
+/*Policy and terms*/
+
+.policy-background {
+  padding: 30px 40px;
+}
+
+.reveal-button-pp {
+  padding: 10px 40px;
+}
+
+
+
+.reveal-button-tc {
+  padding: 10px 40px;
+}
+
+.arrowdown {
+  left: 88%;
+}
+
+.privacypolicy, 
+.termsconditions {
+  padding: 20px 40px;
+}
+
+.privacypolicy h2,
+.termsconditions h2 {
+  margin: 10px 0px 0px 0px;
+  font-size: var(--small_medium);
+}
+
+.privacypolicy p, 
+.termsconditions p,
+.privacypolicy li, 
+.termsconditions li {
+  margin: 2px 0px 0px 0px;
+  font-size: var(--small);
+}
+
+.privacypolicy .smalltext {
+  font-size: var(--very_small);
+}
+
+.termsconditions .smalltext {
+  font-size: var(--very_small);
+}
+
+.privacypolicy ul, 
+.termsconditions ul {
+  margin: 0px;
+}
 
   /*Footer*/
 
@@ -1259,6 +1429,19 @@ footer {
 .scrollbar-element-exibitionspecific p {
   font-size: var(--small);
 }
+
+
+
+/*Policy and terms*/
+
+.policy-background {
+  padding: 30px 80px;
+}
+
+.arrowdown {
+  left: 87%;
+}
+
 
 
   /*Footer*/
