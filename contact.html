@@ -56,12 +56,23 @@
             <a href="contact.html">Contact us</a>
         </nav>
     </header>
-    <main>
-        <img src="#" alt="#">
+    <main class="contact-background">
         <h1>We´d love to hear from you!</h1>
         <p>Have questions, feedback, or need assistance? Our team is here to help. Whether you have an inquiry about our products or services, or simply want to say hello, we’re just a message away.</p>
+        <div class="contact-form-background">
+             <form class="contact-form">
+                <h2>Contact us</h2>
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" class="contact-form-label" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="contact-form-label" required>
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="5" cols="30" class="contact-form-label"  required></textarea>
+                <button>Send a message</button>
+             </form>
+        </div>
+       
     </main>
-    
 </body>
 <footer>
     <div class="grey-box"></div>
