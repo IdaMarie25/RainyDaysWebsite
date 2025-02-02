@@ -721,6 +721,259 @@ form button {
   margin: 20px 0px;
 }
 
+/*Contribution page*/
+
+.donations-images {
+  display: none;
+}
+
+.contribution-background {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.40), rgb(0 0 0 / 0.40)), url(../images/largehallway.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-attachment: fixed;
+}
+
+.contribution-background2 {
+  background-color: white;
+  padding: 10px 20px;
+}
+
+
+.reveal-button-gi, 
+.reveal-button-v, 
+.reveal-button-i {
+  padding: 10px 20px;
+  background-color: var(--color-header);
+  color: white;
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-size: var(--small_medium);
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.reveal-button-gi:hover, .reveal-button-v:hover, .reveal-button-i:hover {
+  background-color: rgba(71, 133, 183, 1);
+}
+
+
+.reveal-text-gi,
+.reveal-text-v, 
+.reveal-text-i {
+  display: none;
+}
+
+.arrowdown-contribution {
+  left: 73%;
+  position: absolute;
+}
+
+.getinvolved, 
+.volunteer,
+.internship {
+  display: none;
+  background-color: white;
+  color: var(--color-secondary);
+  position: relative;
+  font-weight: 100;
+  padding: 5px;
+  line-height: 1.6;
+}
+
+.getinvolved h2, 
+.volunteer h2, 
+.internship h2 {
+  font-size: var(--small);
+  margin: 0px;
+}
+
+.getinvolved h3, 
+.volunteer h3, 
+.internship h3 {
+  font-size: var(--very_small);
+  font-weight: 500;
+  margin: 0px;
+} 
+
+.getinvolved p, 
+.volunteer p, 
+.internship p, 
+.internship li {
+  font-size: var(--very_small);
+}
+
+.reveal-text-gi:checked + .reveal-button-gi + .getinvolved {
+  display: block;
+}
+
+.reveal-text-v:checked + .reveal-button-v + .volunteer {
+  display: block;
+}
+
+.reveal-text-i:checked + .reveal-button-i + .internship {
+  display: block;
+}
+
+.getinvolved-donations {
+  background-color: rgba(239, 245, 250, 1);
+  padding: 5px;
+}
+
+.getinvolved-donations h3 {
+  text-align: center;
+  font-size: var(--small);
+}
+
+.getinvolved-donations div {
+  border-bottom: solid 0.5px var(--color-header);
+  display: flex;
+  justify-content: space-between;
+}
+
+.getinvolved-donations h4 {
+  background-color: var(--color-header);
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 4;
+  color: white;
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-weight: 500;
+  font-size: var(--very_small);
+}
+
+.getinvolved-donations p {
+  padding: 0px 10px;
+}
+
+.button-time {
+  background-color: rgba(133, 184, 218, 0.3);
+  border: none;
+  color: var(--color-footer);
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-weight: 500;
+  font-size: var(--very_small);
+  margin: 5px;
+}
+
+.button-price {
+  background-color: white;
+  border: solid 2px var(--color-footer);
+  color: var(--color-footer);
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-weight: 500;
+  font-size: var(--very_small);
+  margin: auto;
+
+}
+
+.button-donate {
+  background-color: var(--color-button);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-weight: 100;
+  font-size: var(--small);
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.button-time:active {
+  background-color: rgba(133, 184, 218, 0.73);
+}
+
+.button-price:active {
+  background-color: var(--color-footer);
+  color: white;
+}
+
+.button-donate:active {
+  background-color: rgba(112, 143, 118, 1);
+}
+
+.donate-buttons {
+  margin: 20px 0px;
+}
+
+.time-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+
+}
+
+.price-buttons {
+  display: flex;
+  justify-content: center;
+  max-width: 300px;
+  margin: auto;
+}
+
+
+
+
+
+
+.contribution-background3 {
+  background-color: white;
+}
+
+.contribution-background3 h1 {
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--color-footer);
+  font-size: var(--small_medium);
+  padding: 10px;
+  text-align: center;
+}
+
+.contribution-background3 h2 {
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--color-button);
+  font-size: var(--small);
+  padding: 10px;
+  text-align: center;
+}
+
+.contribution-background3 div {
+  display: block;
+  text-align: center;
+}
+
+
+.osmo-logo, 
+.lego-logo, 
+.havforskning-logo, 
+.vid-logo {
+  height: 50px;
+  margin: 10px;
+  max-width: 100%;
+}
+
+.ung-logo {
+  width: 210px;
+  background-color: var(--color-secondary);
+  margin: 10px;
+}
 
 /* Visit us */
 
@@ -986,7 +1239,7 @@ footer {
   background-color: var(--color-footer);
   color: white;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 5fr 3fr;
   grid-template-rows: 10px 1fr 1fr;
   height: 280px;
 }
@@ -1133,6 +1386,46 @@ footer {
 .telephone {
   text-decoration: underline;
 }
+
+@media (min-width: 400px) {
+
+/*Contribution*/
+  .arrowdown-contribution {
+    left: 83%;
+    
+}
+  .donations-images {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin: auto;
+  }
+
+  .button-time {
+    padding: 10px 30px;
+    font-size: var(--small);
+  }
+
+  .button-price {
+    font-size: var(--small);
+    padding: 12px 12px;
+  }
+
+  .button-donate {
+    margin: 20px 0px 0px;
+  }
+
+  /*Footer*/
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+
+}
+
 
 
 
@@ -1514,6 +1807,84 @@ footer {
 }
 
 
+/*Contribution*/
+
+.contribution-background {
+  padding: 40px;
+
+}
+
+
+.arrowdown-contribution {
+  left: 85%;
+  
+}
+
+.getinvolved h2, 
+.volunteer h2, 
+.internship h2, 
+.getinvolved-donations h3 {
+  font-size: var(--small_medium);
+}
+
+.getinvolved p, 
+.volunteer p, 
+.internship p, 
+.internship h3, 
+.internship li {
+  font-size: var(--small);
+}
+
+
+.getinvolved-donations {
+  padding: 20px 40px;
+}
+
+.getinvolved-donations h4 {
+  height: 80px;
+  min-width: 80px;
+  font-size: var(--small_medium);
+}
+
+.donations-images {
+  height: 80px;
+  width: 80px;
+}
+
+
+.getinvolved-donations p {
+  width: 250px;
+  margin: auto;
+}
+
+.donate-buttons {
+  margin: 20px 20px;
+}
+
+
+.button-time {
+  padding: 10px 40px;
+  font-size: var(--small);
+}
+
+.price-buttons {
+  max-width: 500px;
+}
+
+.button-price {
+  font-size: var(--small);
+  padding: 15px 30px;
+}
+
+.button-donate, 
+.button-price, 
+.button-time {
+  font-size: var(--small_medium);
+}
+
+
+
+
 
 /*Visit us */
 
@@ -1832,6 +2203,18 @@ footer {
 
 .contact-form-background {
   max-width: 600px;
+}
+
+/*Contribution*/
+
+
+.contribution-background {
+  padding: 30px 80px;
+
+}
+
+.donate-buttons {
+  margin: 20px 60px;
 }
 
 
