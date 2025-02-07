@@ -192,10 +192,9 @@ nav,
   display: grid;
   gap: 20px;
   grid-auto-flow: column;
-  grid-auto-columns: 45%;
+  grid-auto-columns: 81%;
   overflow-x: auto;
-  margin: 0px 20px;
-  
+  margin:0px 20px;
 }
 
 .scrollbar a:hover {
@@ -214,9 +213,18 @@ nav,
   object-fit: cover;
 }
 
+.scrollbar-element h4 {
+  font-size: var(--very_small);
+  text-decoration: underline;
+  font-weight: 300;
+  margin: 5px 0px;
+}
+
 .scrollbar-element p {
   font-weight: 100;
   font-size: var(--very_small);
+  line-height: 1.5;
+  margin: 0px;
 }
 
 .scrollbar-element a {
@@ -1481,6 +1489,16 @@ footer {
 
 @media (min-width: 400px) {
 
+
+  /*Homepage*/
+
+  .scrollbar {
+    grid-auto-columns: 62%;
+  }
+
+  .scrollbar-element img {
+    height: 200px;
+  }
 
 /*Exibitions*/
 
