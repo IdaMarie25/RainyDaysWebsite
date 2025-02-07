@@ -516,6 +516,16 @@ nav,
 }
 
 
+.robotics-header {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/vr.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+}
+
+
 .exibitionspecific-header-text {
   position: relative;
   top: 130px;
@@ -1566,6 +1576,11 @@ footer {
   grid-auto-columns: 50%;
 }
 
+.scrollbar-element-exibitionspecific img {
+  height: 160px;
+}
+
+
 
 
 /*Contribution*/
@@ -1919,7 +1934,8 @@ footer {
   font-size: var(--small);
 }
 
-.exibitionspecific-header {
+.exibitionspecific-header,
+.robotics-header {
   height: 230px;
 }
 
@@ -1929,10 +1945,14 @@ footer {
 }
 
 
+
 .exibitionspecific-header-text {
   top: 120px;
 }
 
+.scrollbar-element-exibitionspecific img {
+  height: 250px;
+}
 
 
 
@@ -2304,9 +2324,7 @@ footer {
   grid-auto-columns: 38%;
 }
 
-.scrollbar-element-exibitionspecific img {
-  height: 200px;
-}
+
 
 .scrollbar-element-exibitionspecific p {
   font-size: var(--small);
