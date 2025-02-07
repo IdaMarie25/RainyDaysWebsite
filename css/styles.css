@@ -148,7 +148,7 @@ nav,
   font-weight: 100;
   color: white;
   padding: 7px 20px;
-  margin: 5px 0px 0px;
+  margin: 15px 0px 5px;
 
 }
 
@@ -243,59 +243,79 @@ nav,
 /**/
 
 
-.sections a {
-  text-decoration: none;
+.forkids-button, 
+.forteachers-button, 
+.forresearchers-button {
+  background-size: cover;
+  display: block;
   color: white;
+  padding: 90px 20px 15px 20px;
+  font-size: var(--medium);
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
 }
 
-.sections a:hover {
+.forkids-button {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.30)), url(../images/math.jpg);
+  background-position: center;
+}
+
+.forteachers-button {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.30)), url(../images/vr-painting.jpg);
+}
+
+.forresearchers-button {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.30)), url(../images/heart.jpg);
+  background-position: center;
+}
+
+
+.forkids-button:hover, 
+.forteachers-button:hover, 
+.forresearchers-button:hover {
   font-style: italic;
 }
 
-
-.homepage-sections1 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/math.jpg);
-  background-size: cover;
-  height: 100px;
-  width: 100%;
-  position: relative;
-  background-position: center;
+.forkids-text, 
+.forteachers-text,
+.forresearchers-text {
+  display: none;
 }
 
-.homepage-sections2 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/vr-painting.jpg);
-  background-size: cover;
-  height: 100px;
-  width: 100%;
-  position: relative;
-  background-position: 80% 20%;
-}
-
-.homepage-sections3 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/heart.jpg);
-  background-size: cover;
-  height: 100px;
-  width: 100%;
-  position: relative;
-  background-position: center;
-}
-
-.homepage-sections-text {
-  position: relative;
-  text-align: left;
-}
-
-.homepage-sections-text h2 {
+.forkids-paragraph, 
+.fortearchers-paragraph,
+.forresearchers-paragraph {
+  display: none;
+  background-color: var(--color-secondary);
   color: white;
-  font-family: "Roboto", sans-serif, Serif, Geneva, Tahoma;
-  font-weight: 100;
-  font-size: var(--medium);
-  margin: 0px 0px 0px 20px;
   position: relative;
-  top: 63px;
-  text-transform: uppercase;
-
+  font-weight: 100;
+  padding: 20px;
+  line-height: 1.6;
 }
+
+.forkids-text:checked + .forkids-button + .forkids-paragraph {
+  display: block;
+}
+
+.forteachers-text:checked + .forteachers-button + .fortearchers-paragraph {
+  display: block;
+}
+
+.forresearchers-text:checked + .forresearchers-button + .forresearchers-paragraph {
+  display: block;
+}
+
+.arrow-explore {
+  position: absolute;
+  left: 80%;
+  font-size: 30px;
+}
+
+
+
+
 
 /*Exibitions page*/
 
@@ -439,18 +459,18 @@ nav,
 }
 
 .grid-element3 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/skull.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/ecology.jpg);
 
 }
 
 .grid-element4 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/math.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/whitehallway.jpg);
   background-position: left;
 
 }
 
 .grid-element5 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/vr-painting.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/nanotechnology.jpg);
 
 }
 
@@ -477,12 +497,8 @@ nav,
 
 /*Exibitons specific*/
 
-.forkids-header-text p {
-  display: none;
-}
-
-.forkids-header {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/math.jpg);
+.exibitionspecific-header {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/ecology.jpg);
   background-size: cover;
   height: 150px;
   width: 100%;
@@ -490,13 +506,23 @@ nav,
   background-position: center;
 }
 
-.forkids-header-text {
+.biology-header {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/skeletonwithhat.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+}
+
+
+.exibitionspecific-header-text {
   position: relative;
   top: 130px;
   text-align: center;
 }
 
-.forkids-header-text h1 {
+.exibitionspecific-header-text h1 {
   color: white;
   font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
   font-weight: 500;
@@ -507,28 +533,40 @@ nav,
   top: -30px;
 }
 
-.for-kids-text {
-  margin: 50px 40px 40px;
+
+.exibitionspecific-introduction {
+  display: block;
+  margin: 0px;
+  background-color: var(--color-secondary);
+  text-align: left;
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 100;
+  line-height: 1.5;
+  font-size: var(--very_small);
 }
 
-.for-kids-text h3 {
+.exibitionspecific-text {
+  margin: 30px 0px 40px;
+}
+
+.exibitionspecific-text h2 {
   font-weight: 500;
   font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
-  font-size: var(--small_medium);
-}
-
-.for-kids-text h4 {
-  font-weight: 300;
+  text-transform: uppercase;
   font-size: var(--small);
-  margin: 0px 0px 5px 0px;
+  margin: 10px 20px;
 }
 
-.for-kids-text p {
-  margin: 0px;
+.exibitionspecific-text p {
+  margin: 5px 20px;
   line-height: 1.5;
-  font-size: var(--small);
+  font-size: var(--very_small);
   font-weight: 100;
 }
+
+
 
 
 
@@ -545,7 +583,7 @@ nav,
   display: grid;
   gap: 20px;
   grid-auto-flow: column;
-  grid-auto-columns: 42%;
+  grid-auto-columns: 70%;
   overflow-x: auto;
 }
 
@@ -1500,6 +1538,18 @@ footer {
     height: 200px;
   }
 
+  .forkids-button, 
+.forteachers-button, 
+.forresearchers-button {
+  padding: 120px 20px 15px 20px;
+}
+
+
+
+  .arrow-explore {
+    left: 90%;
+  }
+
 /*Exibitions*/
 
 .reveal-button-ep {
@@ -1508,6 +1558,12 @@ footer {
 
 .arrow {
   left: 90%;
+}
+
+
+/*Exibition-specific page*/
+.scrollbar-exibitionspecific {
+  grid-auto-columns: 50%;
 }
 
 
@@ -1721,7 +1777,7 @@ footer {
   }
 
   .homepage-header-text {
-    margin-left: 20px;
+    margin-left: 40px;
     text-align: left;
     top: 155px;
   }
@@ -1735,8 +1791,14 @@ footer {
     font-size: var(--medium);
   }
 
+  .homepage h3 {
+    padding: 7px 40px;
+    font-size: var(--medium);
+  }
+
   .scrollbar {
-    grid-auto-columns: 30%;
+    grid-auto-columns: 40%;
+    margin: 0px 40px;
   }
 
 
@@ -1744,22 +1806,22 @@ footer {
     height: 200px;
   }
 
-
-  .homepage-sections1 {
-    height: 200px;
+  .forkids-button, 
+  .forteachers-button, 
+  .forresearchers-button {
+    padding: 170px 40px 30px 40px;
   }
 
-  .homepage-sections2 {
-    height: 200px;
+  .forkids-paragraph, 
+  .fortearchers-paragraph, 
+  .forresearchers-paragraph {
+    padding: 20px 40px;
   }
 
-  .homepage-sections3 {
-    height: 200px;
+  .arrow-explore {
+    left: 92%;
   }
 
-  .homepage-sections-text h2 {
-    top: 150px;
-  }
 
 
   /*Exibitions page*/
@@ -1771,14 +1833,14 @@ footer {
 
   .exibitions-header h1 {
     font-size: var(--large);
-    margin-left: 20px;
+    margin-left: 40px;
     text-align: left;
     position: relative;
     top: 115px;
   }
 
   .reveal-button-ep {
-    padding: 10px 250px 10px 20px;
+    padding: 10px 250px 10px 40px;
     font-size: var(--small);
 }
 
@@ -1791,6 +1853,8 @@ footer {
 
   .exibitions-grid {
     grid-template-columns: repeat(3, 1fr);
+    margin: 20px 40px 40px 40px;
+
   }
 
   .exibitions-grid h2 {
@@ -1820,54 +1884,57 @@ footer {
 .grid-element4 h3, 
 .grid-element5 h3, 
 .grid-element6 h3, 
-.grid-element7 h3, 
 .grid-element8 h3,
 .grid-element9 h3 {
   font-size: var(--medium);
   margin: 150px auto auto 20px;
 }
 
+.grid-element7 h3 {
+  margin: 125px auto auto 10px;
+  max-width: 100px;
+}
 
 /* Exibitions specific page - kids*/
 
-.for-kids-text p {
+.exibitionspecific-header-text h1 {
+  font-size: var(--large);
+  margin-left: 40px;
+  text-align: left;
+  position: relative;
+  top: 52px;
+}
+.exibitionspecific-introduction {
+  font-size: var(--small);
+  padding: 10px 40px;
+}
+
+.exibitionspecific-text h2 {
+  margin: 20px 40px;
+  font-size: var(--small_medium);
+}
+
+.exibitionspecific-text p {
   margin: 10px 40px;
+  font-size: var(--small);
 }
 
-
-.for-kids-text h3 {
-  display: none;
-}
-
-.forkids-header {
+.exibitionspecific-header {
   height: 230px;
-  background-position: 45% 55%;
 }
 
-.forkids-header-text {
+.biology-header {
+  height: 230px;
+  background-position: 60% 40%;
+}
+
+
+.exibitionspecific-header-text {
   top: 120px;
 }
 
-.forkids-header-text h1 {
-  font-size: var(--large);
-  margin-left: 20px;
-  text-align: left;
-  position: relative;
-  top: 15px;
-}
 
-.forkids-header-text p {
-  display: block;
-  background-color: var(--color-secondary);
-  text-align: left;
-  position: relative;
-  padding: 10px 150px 10px 40px;
-  top: -3px;
-  color: white;
-  font-weight: 100;
-  line-height: 1.5;
-  font-size: var(--small);
-}
+
 
 /*Policy and terms*/
 
@@ -2200,19 +2267,6 @@ footer {
 
   /*Homepage*/
 
-  .homepage-header-text {
-    margin-left: 40px;
-  }
-
-  .homepage h3 {
-    padding: 5px 40px;
-    font-size: var(--medium);
-    margin: 15px 0px 5px;
-  }
-
-  .scrollbar {
-    margin: 0px 40px;
-  }
 
   .scrollbar-element p {
     font-size: var(--small);
@@ -2221,29 +2275,12 @@ footer {
     height: 250px;
   }
 
-  .homepage-sections-text h2 {
-    margin-left: 40px;
-  }
-
-
-
   /*Exibitions page*/
-
-
- .exibitions-header h1 {
-    margin-left: 40px;
-  }
-
 
   .reveal-button-ep {
     padding: 15px 350px 15px 40px;
 
 }
-
-
-  .exibitions-grid {
-    margin: 20px 40px 40px 40px;
-  }
 
   .arrow {
     font-size: 30px;
@@ -2253,23 +2290,9 @@ footer {
 /* Exibitions specific page - kids*/
 
 
-.forkids-header-text h1 {
-  margin-left: 40px;
-}
-
-.forkids-header-text p {
-  padding: 10px 150px 10px 40px;
-
-}
-
-.for-kids-text h4 {
-  margin: 10px 60px;
-  font-size: var(--small_medium);
-}
-
-.for-kids-text p {
-  margin: 10px 60px;
-  font-size: var(--small_medium);
+.exibitionspecific-text h2, 
+.exibitionspecific-text p {
+  margin: 10px 120px;
 }
 
 .scollbar-background {
