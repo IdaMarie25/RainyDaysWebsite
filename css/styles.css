@@ -291,10 +291,6 @@ nav,
 
 /*Exibitions page*/
 
-.exibitions-header-text p, 
-.exibitions-grid h2 {
-  display: none;
-}
 
 .exibitions-header {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/child-looking.jpg);
@@ -305,21 +301,66 @@ nav,
   background-position: center;
 }
 
-.exibitions-header-text {
-  position: relative;
-  top: 130px;
-  text-align: center;
-}
-
-.exibitions-header-text h1 {
+.exibitions-header h1 {
   color: white;
   font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
   font-weight: 500;
   font-size: var(--medium_large);
-  margin: auto;
   text-transform: uppercase;
   position: relative;
-  top: -30px;
+  top: 103px;
+  text-align: center;
+  margin: auto;
+}
+
+.exibitions-dropdown {
+  margin: 0px;
+  position: relative;
+}
+
+
+.reveal-button-ep {
+  padding: 10px 60px 10px 20px;
+  background-color: var(--color-secondary);
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: var(--very_small);
+  height: 100%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif, Serif, Geneva, Tahoma;
+}
+
+.reveal-button-ep:hover {
+  background-color: rgba(19, 19, 19, 1);
+}
+
+.reveal-text-ep {
+  display: none;
+}
+
+
+.exibitions-header-text {
+  display: none;
+  background-color: var(--color-secondary);
+  color: white;
+  position: relative;
+  font-weight: 100;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.reveal-text-ep:checked + .reveal-button-ep + .exibitions-header-text {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  left: 88%;
+  font-size: 25px;
 }
 
 .exibitions-grid {
@@ -330,20 +371,33 @@ nav,
   margin: 20px;
 }
 
+.exibitions-grid h2 {
+  display: none;
+}
+
 .grid-element1 h3, 
 .grid-element2 h3, 
 .grid-element3 h3, 
 .grid-element4 h3, 
 .grid-element5 h3, 
 .grid-element6 h3, 
-.grid-element7 h3, 
 .grid-element8 h3,
 .grid-element9 h3 {
   position: relative;
   color: white;
   font-weight: 100;
-  margin: 134px auto auto 10px;
+  margin: 130px auto auto 10px;
+  font-size: var(--medium);
 }
+
+.grid-element7 h3 {
+  position: relative;
+  color: white;
+  font-weight: 100;
+  margin: 100px auto auto 10px;
+  font-size: var(--medium);
+}
+
 
 .exibitions-grid a {
   text-decoration: none;
@@ -1427,6 +1481,19 @@ footer {
 
 @media (min-width: 400px) {
 
+
+/*Exibitions*/
+
+.reveal-button-ep {
+  padding: 10px 80px 10px 20px;
+}
+
+.arrow {
+  left: 90%;
+}
+
+
+
 /*Contribution*/
   .arrowdown-contribution {
     left: 83%;
@@ -1684,31 +1751,28 @@ footer {
     background-position: 45% 55%;
   }
 
-  .exibitions-header-text h1 {
+  .exibitions-header h1 {
     font-size: var(--large);
     margin-left: 20px;
     text-align: left;
     position: relative;
-    top: -18px;
+    top: 115px;
   }
 
-  .exibitions-header-text p {
-    display: block;
-    background-color: var(--color-secondary);
-    margin: 0px;
-    padding: 10px 150px 10px 20px;
-    text-align: left;
-    position: relative;
-    top: -13px;
-    color: white;
-    font-weight: 100;
-    line-height: 1.6;
+  .reveal-button-ep {
+    padding: 10px 250px 10px 20px;
     font-size: var(--small);
-  }
+}
+
+.exibitions-header-text {
+  padding: 10px 40px;
+  font-size: var(--small);
+}
+
+
 
   .exibitions-grid {
     grid-template-columns: repeat(3, 1fr);
-    margin: 90px 20px 40px 20px;
   }
 
   .exibitions-grid h2 {
@@ -2148,20 +2212,24 @@ footer {
   /*Exibitions page*/
 
 
-  .exibitions-header-text h1 {
+ .exibitions-header h1 {
     margin-left: 40px;
   }
 
-  .exibitions-header-text p {
-    padding: 10px 150px 10px 40px;
-  }
 
+  .reveal-button-ep {
+    padding: 15px 350px 15px 40px;
+
+}
 
 
   .exibitions-grid {
-    margin: 65px 40px 40px 40px;
+    margin: 20px 40px 40px 40px;
   }
 
+  .arrow {
+    font-size: 30px;
+  }
 
 
 /* Exibitions specific page - kids*/
