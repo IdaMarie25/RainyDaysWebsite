@@ -9,11 +9,11 @@
 }
 
 :root {
-    --tiny: 14px;
-    --very_small: 16px;
-    --small: 18px;
-    --small_medium: 20px;
-    --medium: 25px;
-    --medium_large: 30px;
+    --tiny: 12px;
+    --very_small: 14px;
+    --small: 16px;
+    --small_medium: 18px;
+    --medium: 20px;
+    --medium_large: 25px;
     --large: 40px;
   }

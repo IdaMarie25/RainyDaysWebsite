@@ -297,6 +297,7 @@ nav,
   font-weight: 100;
   padding: 20px;
   line-height: 1.6;
+  font-size: var(--very_small);
 }
 
 .forkids-text:checked + .forkids-button + .forkids-paragraph {
@@ -364,6 +365,7 @@ nav,
   align-items: center;
   font-weight: 100;
   font-family: "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  line-height: 1.5;
 }
 
 .reveal-button-ep:hover {
@@ -383,6 +385,7 @@ nav,
   font-weight: 100;
   padding: 20px;
   line-height: 1.6;
+  font-size: var(--very_small);
 }
 
 .reveal-text-ep:checked + .reveal-button-ep + .exibitions-header-text {
@@ -1673,7 +1676,7 @@ footer {
   }
 
   header {
-    padding: 0px 20px;
+    padding: 0px 40px 0px 20px;
   }
   
 
@@ -1857,13 +1860,8 @@ footer {
   .fortearchers-paragraph, 
   .forresearchers-paragraph {
     padding: 20px 40px;
+    font-size: var(--small);
   }
-
-  .arrow-explore {
-    left: 92%;
-  }
-
-
 
   /*Exibitions page*/
 
@@ -2073,7 +2071,7 @@ footer {
 .getinvolved-donations h4 {
   height: 80px;
   min-width: 80px;
-  font-size: var(--small_medium);
+  font-size: var(--medium);
 }
 
 .donations-images {
@@ -2299,10 +2297,7 @@ footer {
   /*Header*/
   .header_large {
     grid-template-columns: 1fr 1fr 1fr 1fr 100px 100px;
-  }
-
-  .header_large {
-    margin: 0px 60px;
+    margin: 0px 40px 0px 82px;
 
   }
 
@@ -2443,6 +2438,8 @@ footer {
 .donate-buttons {
   margin: 20px 60px;
 }
+
+
 
 
 /*Visit us */
