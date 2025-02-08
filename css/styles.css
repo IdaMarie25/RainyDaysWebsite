@@ -181,6 +181,10 @@ nav,
   margin: auto;
 }
 
+.homepage-header-text h2:hover {
+  font-style: italic;
+}
+
 .homepage-header-text a {
   color: white;
 }
@@ -431,6 +435,10 @@ nav,
   text-decoration: none;
 }
 
+.exibitions-grid a:hover {
+  font-style: italic;
+}
+
 .grid-element1, 
 .grid-element2, 
 .grid-element3, 
@@ -490,7 +498,7 @@ nav,
 }
 
 .grid-element9 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/cosmology.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/moon.jpg);
 
 }
 
@@ -524,6 +532,26 @@ nav,
   position: relative;
   background-position: center;
 }
+
+.cosmology-header {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/moon.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+}
+
+.evolution-header {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/skeleton.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  background-position: 90% 10%;
+}
+
+
 
 
 .exibitionspecific-header-text {
@@ -616,11 +644,9 @@ nav,
 .scrollbar-element-exibitionspecific p {
   font-weight: 100;
   font-size: var(--very_small);
-}
-
-.scrollbar-element-exibitionspecific p {
   text-decoration: none;
   color: white;
+  line-height: 1.5;
 }
 
 
@@ -861,11 +887,11 @@ form button {
 .reveal-button-v, 
 .reveal-button-i {
   padding: 10px 20px;
-  background-color: var(--color-header);
+  background-color: var(--color-footer);
   color: white;
-  font-family: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
+  font-family: "Roboto", sans-serif, Serif, Geneva, Tahoma;
   font-size: var(--small_medium);
-  font-weight: 500;
+  font-weight: 100;
   cursor: pointer;
   border: none;
   height: 100%;
@@ -875,7 +901,7 @@ form button {
 }
 
 .reveal-button-gi:hover, .reveal-button-v:hover, .reveal-button-i:hover {
-  background-color: rgba(71, 133, 183, 1);
+  background-color: rgba(0, 41, 67, 1);
 }
 
 
@@ -1044,9 +1070,6 @@ form button {
 
 
 
-
-
-
 .contribution-background3 {
   background-color: white;
 }
@@ -1056,7 +1079,7 @@ form button {
   font-weight: 500;
   text-transform: uppercase;
   color: white;
-  background-color: var(--color-footer);
+  background-color: var(--color-header);
   font-size: var(--small_medium);
   padding: 10px;
   text-align: center;
@@ -1384,6 +1407,10 @@ footer {
   margin: 5px;
 }
 
+.footer_follow a:hover {
+  color: var(--color-header);
+}
+
 .footer_times {
   max-width: 300px;
   display: grid;
@@ -1579,7 +1606,6 @@ footer {
 .scrollbar-element-exibitionspecific img {
   height: 160px;
 }
-
 
 
 
@@ -1906,7 +1932,7 @@ footer {
 }
 
 .grid-element7 h3 {
-  margin: 125px auto auto 10px;
+  margin: 125px auto auto 20px;
   max-width: 100px;
 }
 
@@ -1935,7 +1961,9 @@ footer {
 }
 
 .exibitionspecific-header,
-.robotics-header {
+.robotics-header,
+.cosmology-header, 
+.evolution-header {
   height: 230px;
 }
 
@@ -2096,10 +2124,15 @@ footer {
 
 .visitimage {
   display: grid;
-  height: 400px;
-  margin: 20px;
-  width: 250px;
+  height: 500px;
+  margin: 20px 0px 0px 20px;
+  width: 300px;
   object-fit: cover;
+  padding: 77px 0px;
+}
+
+.visit-background {
+  min-height: 1170px;
 }
 
 
@@ -2240,7 +2273,7 @@ footer {
 
 .footer_follow h1 {
   display: flex;
-  margin: 5px 10px 0px 0px;
+  margin: 14px 10px 0px 0px;
   font-size: var(--small_medium);
   font-weight: 100;
 }
@@ -2248,6 +2281,12 @@ footer {
 .footer_follow i {
   font-size: 20px;
   margin: 0px 5px;
+}
+
+.footer_follow a {
+  color: white;
+  font-size: 20px;
+  margin: 17px 7px;
 }
 
 
@@ -2263,7 +2302,7 @@ footer {
   }
 
   .header_large {
-    margin: 0px 80px;
+    margin: 0px 60px;
 
   }
 
@@ -2287,6 +2326,17 @@ footer {
 
   /*Homepage*/
 
+  .homepage-header-text {
+    margin-left: 80px;
+  }
+
+  .homepage h3 {
+    padding: 7px 80px;
+  }
+
+  .scrollbar {
+    margin: 0px 80px;
+  }
 
   .scrollbar-element p {
     font-size: var(--small);
@@ -2297,26 +2347,47 @@ footer {
 
   /*Exibitions page*/
 
-  .reveal-button-ep {
-    padding: 15px 350px 15px 40px;
 
+.exibitions-header h1 {
+    margin-left: 80px;
+  }
+
+  .reveal-button-ep {
+    padding: 15px 350px 15px 80px;
+
+}
+
+.exibitions-header-text {
+  padding: 10px 80px;
 }
 
   .arrow {
     font-size: 30px;
   }
 
+  
+
+  .exibitions-grid {
+    margin: 20px 80px 40px 80px;
+  }
+
 
 /* Exibitions specific page - kids*/
+.exibitionspecific-header-text h1 {
+  margin-left: 80px;
+}
 
+.exibitionspecific-introduction {
+  padding: 10px 80px;
+}
 
 .exibitionspecific-text h2, 
 .exibitionspecific-text p {
-  margin: 10px 120px;
+  margin: 10px 80px;
 }
 
 .scollbar-background {
-  padding: 20px 60px 10px 60px;
+  padding: 20px 80px 10px 80px;
 }
 
 
@@ -2365,7 +2436,7 @@ footer {
 
 
 .contribution-background {
-  padding: 30px 80px;
+  padding: 30px 120px;
 
 }
 
@@ -2378,22 +2449,18 @@ footer {
 
 
 .visitus {
-  max-width: 800px;
+  max-width: 900px;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 1fr 1fr;
-  padding: 20px;
-}
-
-
-.visitimage {
-  width: 350px;
 }
 
 .visit-background h1 {
   font-size: var(--large);
 }
 
-
+.visitimage {
+  width: 450px;
+}
 
   /*Footer*/
 
