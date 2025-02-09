@@ -200,7 +200,7 @@ nav,
   grid-auto-flow: column;
   grid-auto-columns: 81%;
   overflow-x: auto;
-  margin:0px 20px;
+  margin: 5px 20px;
 }
 
 .scrollbar a:hover {
@@ -217,6 +217,7 @@ nav,
   height: 150px;
   width: 100%;
   object-fit: cover;
+  border-radius: 25px;
 }
 
 .scrollbar-element h4 {
@@ -508,6 +509,73 @@ nav,
 }
 
 
+
+.upcoming-events {
+  font-size: var(--medium);
+  font-weight: 300;
+  color: white;
+  margin: 40px 0px 20px 0px;
+  padding: 10px 20px 10px;
+  background-color: var(--color-button);
+}
+
+
+
+.scollbar-background {
+  background-color: var(--color-secondary);
+  padding: 20px 20px 10px 20px;
+  margin-bottom: 20px;
+}
+
+
+.scrollbar-exibition {
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+  grid-auto-columns: 70%;
+  overflow-x: auto;
+  margin: 20px;
+}
+
+.scrollbar-exibition a:hover {
+    font-style: italic;
+}
+
+.scrollbar-element-exibition {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 2px;
+}
+
+.scrollbar-element-exibition img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.scrollbar-element-exibition p {
+  font-weight: 100;
+  font-size: var(--very_small);
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.scrollbar-element-exibition a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+.snapscroll-exibition {
+  scroll-snap-type: inline mandatory;
+}
+
+.snapscroll-exibition > * {
+  scroll-snap-align: start;
+}
+
+
+
 /*Exibitons specific*/
 
 .exibitionspecific-header {
@@ -611,8 +679,6 @@ nav,
 
 
 
-
-
 /*Interactive element*/
 
 .scollbar-background {
@@ -644,7 +710,7 @@ nav,
   height: 150px;
   width: 100%;
   object-fit: cover;
-  border-radius: 35px;
+  border-radius: 25px;
 }
 
 .scrollbar-element-exibitionspecific p {
@@ -1645,6 +1711,15 @@ footer {
   left: 90%;
 }
 
+.scrollbar-exibition {
+  grid-auto-columns: 62%;
+}
+
+.scrollbar-element-exibition img {
+  height: 200px;
+}
+
+
 
 /*Exibition-specific page*/
 .scrollbar-exibitionspecific {
@@ -1760,7 +1835,7 @@ footer {
 
   .header_large {
     display: grid;
-    grid-template-columns: 1fr 1fr 100px 100px;
+    grid-template-columns: 1fr 1fr 100px 113px;
     grid-template-rows: 45px 45px;
     height: 90px;
     position: relative;
@@ -1920,7 +1995,7 @@ footer {
 
   .scrollbar {
     grid-auto-columns: 40%;
-    margin: 0px 40px;
+    margin: 5px 40px;
   }
 
 
@@ -2012,6 +2087,19 @@ footer {
   max-width: 100px;
   font-size: var(--medium_large);
 }
+
+
+.scrollbar-exibition {
+  grid-auto-columns: 40%;
+  margin: 0px 40px;
+}
+
+
+.scrollbar-element img {
+  height: 200px;
+}
+
+
 
 /* Exibitions specific page - kids*/
 
@@ -2410,7 +2498,7 @@ footer {
 
   /*Header*/
   .header_large {
-    grid-template-columns: 1fr 1fr 1fr 1fr 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 113px 100px;
     margin: 0px 40px 0px 82px;
 
   }
@@ -2444,7 +2532,7 @@ footer {
   }
 
   .scrollbar {
-    margin: 0px 80px;
+    margin: 5px 80px;
   }
 
   .scrollbar-element p {
@@ -2478,6 +2566,17 @@ footer {
 
   .exibitions-grid {
     margin: 20px 80px 40px 80px;
+  }
+  
+  .scrollbar-exibition {
+    margin: 0px 80px;
+  }
+
+  .scrollbar-element p {
+    font-size: var(--small);
+  }
+  .scrollbar-element img {
+    height: 250px;
   }
 
 
