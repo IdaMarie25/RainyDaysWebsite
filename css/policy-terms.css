@@ -21,7 +21,7 @@
     margin: 10px 0px;
     display: flex;
     align-items: center;
-    font-weight: var(--regular);
+    font-weight: 300;
     font-family: var(--first-font);
   }
   
@@ -38,9 +38,9 @@
     background-color: var(--color-secondary);
     color: white;
     position: relative;
-    font-weight: var(--thin);
+    font-weight: 100;
     padding: 20px;
-    line-height: var(--paragraph-height);
+    line-height: 1.5;
   }
   
   .reveal-text-pp:checked + .reveal-button-pp + .privacypolicy {
@@ -58,7 +58,7 @@
     margin: 10px 0px;
     display: flex;
     align-items: center;
-    font-weight: var(--regular);
+    font-weight: 300;
     font-family: var(--first-font);
   }
   
@@ -74,9 +74,9 @@
     display: none;
     background-color: var(--color-secondary);
     color: white;
-    font-weight: var(--thin);
+    font-weight: 100;
     padding: 20px;
-    line-height: var(--paragraph-height);
+    line-height: 1.5;
   }
   
   .reveal-text-tc:checked + .reveal-button-tc + .termsconditions {
@@ -101,7 +101,7 @@
     margin: 20px 0px 0px 0px;
     font-size: var(--small);
     text-transform: uppercase;
-    font-weight: var(--thick);
+    font-weight: 500;
     font-family: var(--secondary-font);
   }
   

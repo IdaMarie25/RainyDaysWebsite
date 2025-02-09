@@ -3,7 +3,7 @@
 
   .visit-background h1 {
     color: white;
-    font-weight: var(--thick);
+    font-weight: 500;
     font-size: var(--medium_large);
     font-family: var(--secondary-font);
     text-transform: uppercase;
@@ -33,14 +33,14 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 20px;
-    line-height: var(--paragraph-height);
+    line-height: 1.5;
     max-width: 600px;
     margin: auto;
   }
   
   .visitus1-content h2 {
     font-size: var(--small);
-    font-weight: var(--thick);
+    font-weight: 500;
     font-family: var(--secondary-font);
     text-transform: uppercase;
     margin: 7px 0px 0px 0px;
@@ -48,7 +48,7 @@
   
   .visitus1-content p {
     font-size: var(--very_small);
-    font-weight: var(--thin);
+    font-weight: 100;
     margin: 0px;
   }
   
@@ -82,7 +82,7 @@
   .visitus2-content h4, 
   .visitus3-content h4 {
     font-size: var(--small);
-    font-weight: var(--thick);
+    font-weight: 500;
     font-family: var(--secondary-font);
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -92,7 +92,7 @@
   .visitus2-content p, 
   .visitus3-content h5, 
   .visitus3-content p {
-    font-weight: var(--thin);
+    font-weight: 100;
     font-size: var(--very_small);
     padding: 5px 0px;
   }
@@ -243,7 +243,7 @@
   }
   
   .visitus4 p {
-    font-weight: var(--thin);
+    font-weight: 100;
     font-size: var(--very_small);
     padding: 0px 60px;
   }
@@ -263,7 +263,7 @@
   form label {
     font-size: var(--small);
     color: var(--color-secondary);
-    font-weight: var(--thin);
+    font-weight: 100;
   }
   
   .contact-form-label {
@@ -281,7 +281,7 @@
     border-radius: 3px;
     background-color: var(--color-button);
     color: white;
-    font-weight: var(--thick);
+    font-weight: 500;
     font-family: var(--secondary-font);
     text-transform: uppercase;
     padding: 15px;
