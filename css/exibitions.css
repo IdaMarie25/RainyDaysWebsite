@@ -1,0 +1,593 @@
+
+/*Exibition page and exibition specific pages*/
+
+/*Exibition page*/
+
+  .exibitions-header {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/child-looking.jpg);
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    position: relative;
+    background-position: center;
+  }
+  
+  .exibitions-header h1 {
+    color: white;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: var(--medium_large);
+    text-transform: uppercase;
+    position: relative;
+    top: 103px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .exibitions-dropdown {
+    margin: 0px;
+    position: relative;
+  }
+  
+  .reveal-button-ep {
+    padding: 10px 60px 10px 20px;
+    background-color: var(--color-button);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: var(--very_small);
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-family: var(--first-font);
+    line-height: 1.5;
+  }
+  
+  .reveal-button-ep:hover {
+    background-color: var(--color-hover);
+  }
+  
+  .reveal-text-ep {
+    display: none;
+  }
+  
+  .exibitions-header-text {
+    display: none;
+    background-color: var(--color-button);
+    color: white;
+    position: relative;
+    font-weight: 300;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: var(--very_small);
+  }
+  
+  .reveal-text-ep:checked + .reveal-button-ep + .exibitions-header-text {
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    left: 88%;
+    font-size: 25px;
+  }
+  
+  .exibitions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .exibitions-grid h2 {
+    display: none;
+  }
+  
+  .grid-element1 h3, 
+  .grid-element2 h3, 
+  .grid-element3 h3, 
+  .grid-element4 h3, 
+  .grid-element5 h3, 
+  .grid-element6 h3, 
+  .grid-element8 h3,
+  .grid-element9 h3 {
+    position: relative;
+    color: white;
+    font-weight: 300;
+    margin: 130px auto auto 10px;
+    font-size: var(--medium);
+  }
+  
+  .grid-element7 h3 {
+    position: relative;
+    color: white;
+    font-weight: 300;
+    margin: 110px auto auto 10px;
+    font-size: var(--medium);
+    width: 100px;
+  }
+  
+  .exibitions-grid a {
+    text-decoration: none;
+  }
+  
+  .exibitions-grid a:hover {
+    font-style: italic;
+  }
+  
+  .grid-element1, 
+  .grid-element2, 
+  .grid-element3, 
+  .grid-element4, 
+  .grid-element5, 
+  .grid-element6, 
+  .grid-element7, 
+  .grid-element8,
+  .grid-element9 {
+    background-size: cover;
+    height: 170px;
+    width: auto;
+    object-fit: cover;
+    position: relative;
+    background-position: center;
+  }
+  
+  .grid-element1 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/skeleton.jpg);
+  }
+  
+  .grid-element2 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/mammoth.jpg);
+  }
+  
+  .grid-element3 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/ecology.jpg);
+  }
+  
+  .grid-element4 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/whitehallway.jpg);
+    background-position: left;
+  }
+  
+  .grid-element5 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/nanotechnology.jpg);
+  }
+  
+  .grid-element6 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/vr.jpg);
+  }
+  
+  .grid-element7 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/skeletonwithhat.jpg);
+  }
+  
+  .grid-element8 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/giantant.jpg);
+  }
+  
+  .grid-element9 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 50%)), url(../images/moon.jpg);
+  }
+  
+  .upcoming-events {
+    font-size: var(--medium);
+    font-weight: 300;
+    color: white;
+    margin: 40px 0px 20px 0px;
+    padding: 10px 20px 10px;
+    background-color: var(--color-button);
+  }
+  
+  .scollbar-background {
+    background-color: var(--color-secondary);
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .scrollbar-exibition {
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    grid-auto-columns: 70%;
+    overflow-x: auto;
+    margin: 20px;
+  }
+  
+  .scrollbar-exibition a:hover {
+      font-style: italic;
+  }
+  
+  .scrollbar-element-exibition {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 2px;
+  }
+  
+  .scrollbar-element-exibition img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  
+  .scrollbar-element-exibition p {
+    font-weight: 100;
+    font-size: var(--very_small);
+    text-decoration: none;
+    line-height: 1.5;
+  }
+  
+  .scrollbar-element-exibition a {
+    text-decoration: none;
+    color: var(--color-secondary);
+  }
+  
+  .snapscroll-exibition {
+    scroll-snap-type: inline mandatory;
+  }
+  
+  .snapscroll-exibition > * {
+    scroll-snap-align: start;
+  }
+  
+  
+  /*Exibitons specific pages*/
+  
+  .exibitionspecific-header {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/ecology.jpg);
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    position: relative;
+    background-position: center;
+  }
+  
+  .biology-header,
+  .robotics-header,
+  .cosmology-header,
+  .evolution-header {
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    position: relative;
+  }
+
+  .biology-header {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/skeletonwithhat.jpg);
+    background-position: center;
+  }
+  
+  .robotics-header {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/vr.jpg);
+    background-position: center;
+  }
+  
+  .cosmology-header {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/moon.jpg);
+    background-position: center;
+  }
+  
+  .evolution-header {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.30)), url(../images/skeleton.jpg);
+    background-position: 90% 10%;
+  }
+  
+  .exibitionspecific-header-text {
+    position: relative;
+    top: 130px;
+    text-align: center;
+  }
+  
+  .exibitionspecific-header-text h1 {
+    color: white;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: var(--medium_large);
+    margin: auto;
+    text-transform: uppercase;
+    position: relative;
+    top: -30px;
+  }
+  
+  .exibitionspecific-introduction {
+    display: block;
+    margin: 0px;
+    background-color: var(--color-button);
+    text-align: left;
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: var(--very_small);
+  }
+  
+  .exibitionspecific-text {
+    margin: 30px 0px 40px;
+  }
+  
+  .exibitionspecific-text h2 {
+    font-weight: 500;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-size: var(--small);
+    margin: 10px 20px;
+  }
+  
+  .exibitionspecific-text p {
+    margin: 5px 20px;
+    line-height: 1.5;
+    font-size: var(--very_small);
+    font-weight: 100;
+  }
+  
+  .scollbar-background {
+    background-color: var(--color-secondary);
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .scrollbar-exibitionspecific {
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    grid-auto-columns: 70%;
+    overflow-x: auto;
+  }
+  
+  .scrollbar-exibitionspecific a:hover {
+      font-style: italic;
+  }
+  
+  .scrollbar-element-exibitionspecific {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 2px;
+  }
+  
+  .scrollbar-element-exibitionspecific img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  
+  .scrollbar-element-exibitionspecific p {
+    font-weight: 100;
+    font-size: var(--very_small);
+    text-decoration: none;
+    color: white;
+    line-height: 1.5;
+  }
+  
+  .snapscroll-exibitionspecific {
+    scroll-snap-type: inline mandatory;
+  }
+  
+  .snapscroll-exibitionspecific > * {
+    scroll-snap-align: start;
+  }
+
+
+@media (min-width: 400px) {
+
+/*Exibitions*/
+
+  .reveal-button-ep {
+    padding: 10px 80px 10px 20px;
+  }
+
+  .arrow {
+    left: 90%;
+  }
+
+  .scrollbar-exibition {
+    grid-auto-columns: 62%;
+  }
+
+  .scrollbar-element-exibition img {
+    height: 200px;
+  }
+
+/*Exibition-specific page*/
+
+  .scrollbar-exibitionspecific {
+    grid-auto-columns: 50%;
+  }
+
+  .scrollbar-element-exibitionspecific img {
+    height: 160px;
+  }
+}
+
+@media (min-width: 700px) {
+
+/*Exibitions page*/
+
+  .exibitions-header {
+    height: 170px;
+    background-position: 45% 55%;
+  }
+
+  .exibitions-header h1 {
+    font-size: var(--large);
+    margin-left: 40px;
+    text-align: left;
+    position: relative;
+    top: 115px;
+  }
+
+  .reveal-button-ep {
+    padding: 10px 250px 10px 40px;
+    font-size: var(--small);
+  }
+
+  .exibitions-header-text {
+    padding: 10px 40px;
+    font-size: var(--small);
+  }
+
+  .exibitions-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 40px 40px 40px;
+  }
+
+  .exibitions-grid h2 {
+    display: block;
+    grid-column: span 3;
+    font-size: var(--medium);
+    font-weight: 100;
+    margin: 20px 0px 0px;
+  }
+
+  .grid-element1, 
+  .grid-element2, 
+  .grid-element3, 
+  .grid-element4, 
+  .grid-element5, 
+  .grid-element6, 
+  .grid-element7, 
+  .grid-element8,
+  .grid-element9 {
+  height: 200px;
+  }
+
+  .grid-element1 h3, 
+  .grid-element2 h3, 
+  .grid-element3 h3, 
+  .grid-element4 h3, 
+  .grid-element5 h3, 
+  .grid-element6 h3, 
+  .grid-element8 h3,
+  .grid-element9 h3 {
+    font-size: var(--medium_large);
+    margin: 155px auto auto 20px;
+  }
+
+  .grid-element7 h3 {
+    margin: 130px auto auto 20px;
+    width: 150px;
+    font-size: var(--medium_large);
+  }
+
+  .scrollbar-exibition {
+    grid-auto-columns: 40%;
+    margin: 0px 40px;
+  }
+
+  .scrollbar-element img {
+    height: 200px;
+  }
+
+/* Exibitions specific page - kids*/
+
+  .exibitionspecific-header-text h1 {
+    font-size: var(--large);
+    margin-left: 40px;
+    text-align: left;
+    position: relative;
+    top: 52px;
+  }
+
+  .exibitionspecific-introduction {
+    font-size: var(--small);
+    padding: 10px 40px;
+  }
+
+  .exibitionspecific-text h2 {
+    margin: 20px 40px;
+    font-size: var(--small_medium);
+  }
+
+  .exibitionspecific-text p {
+    margin: 10px 40px;
+    font-size: var(--small);
+  }
+
+  .exibitionspecific-header,
+  .robotics-header,
+  .cosmology-header, 
+  .evolution-header {
+    height: 230px;
+  }
+
+  .biology-header {
+    height: 230px;
+    background-position: 60% 40%;
+  }
+
+  .exibitionspecific-header-text {
+    top: 120px;
+  }
+
+  .scrollbar-element-exibitionspecific img {
+    height: 250px;
+  }
+}
+
+
+@media (min-width: 900px) {
+
+/*Exibitions page*/
+
+  .exibitions-header h1 {
+    margin-left: 80px;
+  }
+
+  .reveal-button-ep {
+    padding: 15px 350px 15px 80px;
+  }
+
+  .exibitions-header-text {
+    padding: 10px 80px;
+  }
+
+  .arrow {
+    font-size: 30px;
+  }
+
+  .exibitions-grid {
+    margin: 20px 80px 40px 80px;
+  }
+  
+  .scrollbar-exibition {
+    margin: 0px 80px;
+  }
+
+  .scrollbar-element p {
+    font-size: var(--small);
+  }
+  .scrollbar-element img {
+    height: 250px;
+  }
+
+/* Exibitions specific page */
+
+  .exibitionspecific-header-text h1 {
+    margin-left: 80px;
+  }
+
+  .exibitionspecific-introduction {
+    padding: 10px 80px;
+  }
+
+  .exibitionspecific-text h2, 
+  .exibitionspecific-text p {
+    margin: 10px 80px;
+  }
+
+  .scollbar-background {
+    padding: 20px 80px 10px 80px;
+  }
+
+  .scrollbar-exibitionspecific {
+    grid-auto-columns: 38%;
+  }
+
+  .scrollbar-element-exibitionspecific p {
+    font-size: var(--small);
+  }
+}
