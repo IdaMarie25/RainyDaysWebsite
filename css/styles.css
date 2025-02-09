@@ -58,7 +58,7 @@ nav,
   background-color: var(--color-secondary);
   color: white;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr;
   width: 100%;
 
 }
@@ -259,7 +259,7 @@ nav,
   padding: 90px 20px 15px 20px;
   font-size: var(--medium);
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 300;
   font-family: var(--secondary-font);
 }
 
@@ -423,7 +423,7 @@ nav,
 .grid-element9 h3 {
   position: relative;
   color: white;
-  font-weight: 100;
+  font-weight: 300;
   margin: 130px auto auto 10px;
   font-size: var(--medium);
 }
@@ -431,7 +431,7 @@ nav,
 .grid-element7 h3 {
   position: relative;
   color: white;
-  font-weight: 100;
+  font-weight: 300;
   margin: 130px auto auto 10px;
   font-size: var(--medium);
 }
@@ -1070,7 +1070,7 @@ nav,
   font-family: var(--secondary-font);
   font-weight: 500;
   font-size: var(--very_small);
-  margin: auto;
+  margin: 5px;
 
 }
 
