@@ -23,3 +23,13 @@
     --first-font: "Roboto", sans-serif, Serif, Geneva, Tahoma;
     --secondary-font: "DM Sans", "Roboto", sans-serif, Serif, Geneva, Tahoma;
 }
+
+:root {
+    --paragraph-height: 1.5;
+}
+
+:root {
+    --thin: 100;
+    --regular: 300;
+    --thick: 500;
+}

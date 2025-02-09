@@ -15,7 +15,7 @@
   .exibitions-header h1 {
     color: white;
     font-family: var(--secondary-font);
-    font-weight: 500;
+    font-weight: var(--thick);
     font-size: var(--medium_large);
     text-transform: uppercase;
     position: relative;
@@ -40,9 +40,9 @@
     margin: 0px;
     display: flex;
     align-items: center;
-    font-weight: 300;
+    font-weight: var(--regular);
     font-family: var(--first-font);
-    line-height: 1.5;
+    line-height: var(--paragraph-height);
   }
   
   .reveal-button-ep:hover {
@@ -58,9 +58,9 @@
     background-color: var(--color-button);
     color: white;
     position: relative;
-    font-weight: 300;
+    font-weight: var(--regular);
     padding: 20px;
-    line-height: 1.6;
+    line-height: var(--paragraph-height);
     font-size: var(--very_small);
   }
   
@@ -96,7 +96,7 @@
   .grid-element9 h3 {
     position: relative;
     color: white;
-    font-weight: 300;
+    font-weight: var(--regular);
     margin: 130px auto auto 10px;
     font-size: var(--medium);
   }
@@ -104,7 +104,7 @@
   .grid-element7 h3 {
     position: relative;
     color: white;
-    font-weight: 300;
+    font-weight: var(--regular);
     margin: 110px auto auto 10px;
     font-size: var(--medium);
     width: 100px;
@@ -174,7 +174,7 @@
   
   .upcoming-events {
     font-size: var(--medium);
-    font-weight: 300;
+    font-weight: var(--regular);
     color: white;
     margin: 40px 0px 20px 0px;
     padding: 10px 20px 10px;
@@ -214,10 +214,10 @@
   }
   
   .scrollbar-element-exibition p {
-    font-weight: 100;
+    font-weight: var(--thin);
     font-size: var(--very_small);
     text-decoration: none;
-    line-height: 1.5;
+    line-height: var(--paragraph-height);
   }
   
   .scrollbar-element-exibition a {
@@ -284,7 +284,7 @@
   .exibitionspecific-header-text h1 {
     color: white;
     font-family: var(--secondary-font);
-    font-weight: 500;
+    font-weight: var(--thick);
     font-size: var(--medium_large);
     margin: auto;
     text-transform: uppercase;
@@ -300,8 +300,8 @@
     position: relative;
     padding: 10px 20px;
     color: white;
-    font-weight: 300;
-    line-height: 1.5;
+    font-weight: var(--regular);
+    line-height: var(--paragraph-height);
     font-size: var(--very_small);
   }
   
@@ -310,7 +310,7 @@
   }
   
   .exibitionspecific-text h2 {
-    font-weight: 500;
+    font-weight: var(--thick);
     font-family: var(--secondary-font);
     text-transform: uppercase;
     font-size: var(--small);
@@ -319,9 +319,9 @@
   
   .exibitionspecific-text p {
     margin: 5px 20px;
-    line-height: 1.5;
+    line-height: var(--paragraph-height);
     font-size: var(--very_small);
-    font-weight: 100;
+    font-weight: var(--thin);
   }
   
   .scollbar-background {
@@ -356,11 +356,11 @@
   }
   
   .scrollbar-element-exibitionspecific p {
-    font-weight: 100;
+    font-weight: var(--thin);
     font-size: var(--very_small);
     text-decoration: none;
     color: white;
-    line-height: 1.5;
+    line-height: var(--paragraph-height);
   }
   
   .snapscroll-exibitionspecific {
@@ -439,7 +439,7 @@
     display: block;
     grid-column: span 3;
     font-size: var(--medium);
-    font-weight: 100;
+    font-weight: var(--thin);
     margin: 20px 0px 0px;
   }
 
