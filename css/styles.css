@@ -432,8 +432,9 @@ nav,
   position: relative;
   color: white;
   font-weight: 300;
-  margin: 130px auto auto 10px;
+  margin: 110px auto auto 10px;
   font-size: var(--medium);
+  width: 100px;
 }
 
 
@@ -2084,7 +2085,7 @@ footer {
 
 .grid-element7 h3 {
   margin: 130px auto auto 20px;
-  max-width: 100px;
+  width: 150px;
   font-size: var(--medium_large);
 }
 
