@@ -32,9 +32,9 @@
             <a href="visit.html" class="header_visit">Visit us</a>
             <a href="policy-terms.html" class="extra_contact">Terms & Policy</a>
             <a href="#" class="extra_english">NOR <i class="fa-solid fa-globe large_globe"></i></a> 
-            <form class="search_large">
+            <form class="search_large" aria-labelledby="search-form">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input class="searchbar_input" type="search" placeholder="Discover wonders!">
+                <input class="searchbar_input" type="search" placeholder="Discover wonders!" aria-label="Search query">
             </form>
         </div>
 
@@ -46,9 +46,9 @@
                 <i class="fa-solid fa-globe globe"></i>
                 <h2>NOR</h2>
             </div>
-            <form>
+            <form aria-labelledby="search-form">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input class="searchbar" type="search" placeholder="Discover wonders!">
+                <input class="searchbar" type="search" placeholder="Discover wonders!" aria-label="Search query">
             </form> 
             <a href="exibitions.html">Exibitions</a>
             <a href="contribution.html">Contribution</a>
@@ -117,15 +117,14 @@
             </div>
             <h1>We´d love to hear from you!</h1>
             <div class="visitus4">
-                
                 <form class="contact-form">
                 <h2>Contact form</h2>
                 <label for="name">Your name</label>
-                <input type="text" id="name" name="name" class="contact-form-label" required>
+                <input type="text" id="name" name="name" class="contact-form-label" aria-labelledby="name-label" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="contact-form-label" required>
+                <input type="email" id="email" name="email" class="contact-form-label" aria-labelledby="email-label" required>
                 <label for="message">Your message</label>
-                <textarea id="message" name="message" rows="5" cols="30" class="contact-form-label"  required></textarea>
+                <textarea id="message" name="message" rows="5" cols="30" class="contact-form-label"  aria-labelledby="message-label" required></textarea>
                 <button>Send a message</button>
                 </form>
             </div>
